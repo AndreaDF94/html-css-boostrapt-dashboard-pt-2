@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalogo Libri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="duck.png" alt="Logo" class="logo">
+      <span class="brand">Catalogo Libri</span>
+    </div>
+    <div class="nav-right">
+      <a href="#">Anagrafica Utenti</a>
+      <a href="#">Storico Prestiti</a>
+      <a href="#">Help</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1>Nuovo Libro</h1>
+
+    <form>
+      <div class="form-row">
+        <input type="text" placeholder="Inserisci il nome dell'autore">
+        <input type="text" placeholder="Inserisci il cognome dell'autore">
+      </div>
+      <input type="text" placeholder="Inserisci il titolo del libro">
+      <small>Titolo versione italiana</small>
+
+      <div class="form-row">
+        <select>
+          <option>Scegli il genere</option>
+        </select>
+        <input type="text" placeholder="Inserisci l'anno">
+        <input type="text" placeholder="Inserisci il codice ISBN#">
+      </div>
+
+      <textarea placeholder="Inserisci eventuali note sul libro"></textarea>
+
+      <div class="checkbox">
+        <input type="checkbox" id="digital">
+        <label for="digital">Disponibile anche in digitale</label>
+      </div>
+
+      <button type="submit">Aggiungi Libro</button>
+    </form>
+  </main>
+</body>
+</html>
